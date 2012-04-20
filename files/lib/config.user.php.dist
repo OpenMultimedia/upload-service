@@ -1,0 +1,30 @@
+<?php
+/**
+ * Debe indicarse la ruta relativa a la raiz de la ruta web.
+ * Sin este dato se podrán hacer subidas, pero no descargas.
+ * P. ej. Si la ruta al punto de acceso del API es: http://some.host.com/files/
+ * el base_dir deberá ser: '/files/'.
+ */
+// $config['base_dir'] = '/';
+
+/**
+ * Ruta a la carpeta donde se almacenarán los archivos subidos. Siempre debe terminar en '/'
+ */
+//$config['upload_location'] = './uploads/';
+
+/**
+ * Indica si se mostrará la información de depuración. Para ver dicha información
+ * se requiere FireLogger (http://firelogger.binaryage.com)
+ */
+//$config['debug'] = false;
+
+// NOT USED
+//$config['ffmpeg_command'] = 'ffmpeg -v 5 -i {filename}';
+
+/**
+ * Formatos válidos a subir. Si se usa un arreglo vacío, se desactiva el chequeo.
+ */
+//$config['valid_formats']= array('mp4', 'avi', 'mov');
+
+// NOT USED
+//$config['upload_referer_check'] = true;

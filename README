@@ -7,15 +7,15 @@ INSTALACIÓN
 Se requiere Apache2 con mod_ssl, mod_rewrite y soporte para PHP 5.3
 
 Se deben copiar los archivos:
-- htaccess.dist (renombrado como .htaccess)
-- delete.php
-- download.php
-- upload.php
+- files/htaccess.dist (renombrado como .htaccess)
+- files/delete.php
+- files/download.php
+- files/upload.php
 
 Y las carpetas:
-- lib
-- files (sólo si se usará la ruta de subida por defecto)
+- files/lib
+- files/uploads (sólo si se usará la ruta de subida por defecto)
 
-a la ruta de archivos web (p. ej. /var/www/ )
+a la ruta de archivos web (p. ej. /var/www/files/ )
 
-Se puede renombrar el archivo [lib/config.user.php.dist] a [lib/config.user.php] y editarlo de acuerdo a las necesidades.
+Se puede renombrar el archivo [files/lib/config.user.php.dist] a [files/lib/config.user.php] y editarlo de acuerdo a las necesidades.

@@ -1,7 +1,0 @@
-<?php
-//$config['base_dir'] = '/';
-//$config['upload_location'] = './files';
-//$config['debug'] = false;
-//$config['ffmpeg_command'] = 'ffmpeg -v 5 -i {filename}';
-//$config['valid_formats']= array('mp4', 'avi', 'mov');
-//$config['upload_referer_check'] = true;

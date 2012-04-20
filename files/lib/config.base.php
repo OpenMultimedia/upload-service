@@ -2,8 +2,7 @@
 global $config;
 $config = array(
     'base_dir' => '/',
-    
-    'upload_location' => './files',
+    'upload_location' => './uploads/',
     'debug'  => false,
     'ffmpeg_command' => 'ffmpeg -v 5 -i {filename}',
     'valid_formats' => array('mp4', 'avi', 'mov'),
