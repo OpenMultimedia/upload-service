@@ -5,7 +5,7 @@ include('lib/qqUploader.php');
 // list of valid extensions, ex. array("jpeg", "xml", "bmp")
 $allowedExtensions = $config['valid_formats'];
 // max file size in bytes
-$sizeLimit = 100 * 1024 * 1024;
+$sizeLimit = $config['size_limit'];
 
 $uploader = new qqFileUploader($allowedExtensions, $sizeLimit);
 $result = $uploader->handleUpload($config['upload_location']);
