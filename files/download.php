@@ -14,8 +14,10 @@ if ( $file_id ) {
         uploaded_file_read($file_id);
         exit();
     } else {
-        header("HTTP/1.0 404 Not Found");
+        header('HTTP/1.0 404 Not Found');
+        header('Content-type: application/json');
         $response = array(
+            'success' => false,
             'status' => 'error',
             'error' => 'archivo_no_existe'
         );
@@ -23,8 +25,10 @@ if ( $file_id ) {
         exit();
     }
 } else {
-    header("HTTP/1.0 400 Bad Request");
+    header('HTTP/1.0 400 Bad Request');
+    header('Content-type: application/json');
     $response = array(
+        'success' => false,
         'status' => 'error',
         'error' => 'archivo_no_indicado'
     );

@@ -52,7 +52,7 @@
                 },
                 error: function (data, status, e)
                 {
-                    $('#delete_result').html('<pre>' + $.toJSON(data) + '</pre>');
+                    $('#delete_result').html('<pre>' + data.responseText + '</pre>');
                 }
             });
             return false;
